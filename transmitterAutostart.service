@@ -1,0 +1,10 @@
+# Must be placed in /sys/services and enabled using systemctl
+
+[Unit]
+Description=This service automatically creates the necessary files and starts the data transmitter.
+
+[Service]
+ExecStart=/path-to-file/transmitterSetupScript.sh
+
+[Install]
+WantedBy=multi-user.target
